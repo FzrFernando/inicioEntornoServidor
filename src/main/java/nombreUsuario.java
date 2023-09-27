@@ -43,7 +43,13 @@ public class nombreUsuario extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String name = request.getParameter("nombre");
+		PrintWriter writer= response.getWriter();
+		writer.println("<html>");
+		writer.println("<body>");
+		writer.println("Bienvenido "+ name);
+		writer.println("</body>");
+		writer.println("</html>"); 
 	}
 
 }
