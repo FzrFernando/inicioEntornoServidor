@@ -66,5 +66,19 @@ public class Calculadora {
 		return "Calculadora [num1=" + num1 + ", num2=" + num2 + ", operator=" + operator + "]";
 	}
 	
+	public int operaciones(int num1, int num2, char operator) {
+		int resultado;
+		if (operator == '+') {
+			resultado = num1 + num2;
+		} else if (operator == '-') {
+			resultado = num1 - num2;
+		} else if (operator == '*') {
+			resultado = num1 * num2;
+		} else {
+			resultado = num1 / num2;
+		}
+		return resultado;
+	}
+	
 	
 }
